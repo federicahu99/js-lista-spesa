@@ -7,12 +7,20 @@
 let groceryList = '<ul>';
 /* Array */
 const listProduct = [ 'Uova', 'Pane','Latte','Biscotti','Pasta', 'Affettati', 'Formaggio', 'Verdura', 'Frutta']
-
-for ( i = 1; i <= listProduct.length -1 ; i++) {
+//For
+for ( i = 0; i <= listProduct.length -1 ; i++) {
     groceryList += `<li> ${listProduct[i]} </li>`;
-    console.log(groceryList);
 }
-
+//Chiudo ul
 groceryList += '</ul>';
 /* Porto nel Dom */
 document.getElementById('grocery').innerHTML= groceryList;
+
+// Creo un ciclo While
+listProduct[0];
+while (listProduct !== [9]) {
+    groceryList += `<li> ${listProduct[i]} </li>`;
+    i++;
+}
+
+groceryList += '</ul>';
