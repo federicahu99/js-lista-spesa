@@ -1,14 +1,18 @@
 /*
-1-creo un ciclo for per inserire gli elementi della lista in pagina
+1-creo un ciclo for per inserire gli elementi della lista in pagina.
+2-lo trasformo in un while
 */
 
 /* inizio a creare l'appoggio */
-const groceryList = '<ul>';
+let groceryList = '<ul>';
 /* Array */
-const listItem = [ 'Uova', 'Pane','Latte','Biscotti','Pasta', 'Affettati', 'Formaggio', 'Verdura', 'Frutta']
+const listProduct = [ 'Uova', 'Pane','Latte','Biscotti','Pasta', 'Affettati', 'Formaggio', 'Verdura', 'Frutta']
 
-for ( i = 1; i <=8; i++) {
-    groceryList += `<li> ${listItem[i]} </li>`;
-    groceryList += '</ul>';
+for ( i = 1; i <= listProduct.length -1 ; i++) {
+    groceryList += `<li> ${listProduct[i]} </li>`;
     console.log(groceryList);
 }
+
+groceryList += '</ul>';
+/* Porto nel Dom */
+document.getElementById('grocery').innerHTML= groceryList;
